@@ -128,3 +128,32 @@ a {
     font-size: 1.2rem;
   }
 }
+
+/* 列表 */
+.list {
+  /* 去掉自带的列表框和左内边距 */
+  list-style: none;
+  padding-left: 0;
+  color: var(--color-headings);
+}
+
+.list--inline .list_item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list--tick {
+  list-style-image: url(../image/tick.svg);
+  padding-left: 3rem;
+}
+
+.list--tick .list_item {
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list--tick .list_item {
+    padding-left: 0rem;
+  }
+}
