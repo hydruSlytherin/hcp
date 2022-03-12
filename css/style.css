@@ -157,3 +157,25 @@ a {
     padding-left: 0rem;
   }
 }
+
+/* 图标 */
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-container {
+  background: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  /* 为了使图标和背景对齐，使用行内弹性盒子，主轴和正交轴居中 */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon--primary {
+  /* fill只对svg图标有效 */
+  fill: var(--color-primary);
+}
