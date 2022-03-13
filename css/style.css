@@ -430,3 +430,51 @@ a {
   position: relative;
   bottom: 10px;
 }
+
+/* Grids */
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 推荐 */
+
+.tuijian {
+  padding: 3rem;
+}
+
+.tuijian_image {
+  width: 100%;
+  position: relative;
+}
+
+/* Callout */
+.callout {
+  padding: 4rem;
+  border: 5px solid;
+}
+
+.callout--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.callout_heading {
+  margin-top: 0;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.callout_content {
+  text-align: center;
+}
+
+.callout .btn {
+  align-self: center;
+  justify-self: center;
+}
