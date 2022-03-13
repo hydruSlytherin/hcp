@@ -518,3 +518,28 @@ a {
   opacity: 0;
   transition: all 0.5s;
 }
+
+/* block */
+.block {
+  padding: 6rem;
+}
+
+.block_heading {
+  margin-top: 0;
+}
+
+.block--dark {
+  background: #000;
+  color: #7b858b;
+}
+
+.block--dark .block_heading {
+  color: #fff;
+}
+
+/* nav */
+.nav {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+}
