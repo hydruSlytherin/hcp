@@ -180,6 +180,9 @@ a {
   /* fill只对svg图标有效 */
   fill: var(--color-primary);
 }
+.icon--white {
+  fill: #fff;
+}
 
 /* Buttons */
 .btn {
@@ -477,4 +480,41 @@ a {
 .callout .btn {
   align-self: center;
   justify-self: center;
+}
+
+/* collapsible */
+.collapsible {
+}
+
+.collapsible_header {
+  display: flex;
+  /* 元素被拉到两端，中间填充空白 */
+  justify-content: space-between;
+}
+
+.collapsible_heading {
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.collapsible--expanded .collapsible_chevron {
+  transform: rotate(0);
+}
+
+.collapsible_chevron {
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+
+.collapsible--expanded .collapsible_content {
+  min-height: 100vh;
+  opacity: 1;
+}
+
+.collapsible_content {
+  /* 让内容溢出 */
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s;
 }
