@@ -379,3 +379,21 @@ a {
     font-size: 1.7rem;
   }
 }
+
+/* media */
+
+.media {
+  display: flex;
+}
+
+.media_image {
+  margin-top: 1.5rem;
+}
+
+.media_body {
+  margin: 0 2rem;
+}
+
+.media_title {
+  margin-top: 0;
+}
